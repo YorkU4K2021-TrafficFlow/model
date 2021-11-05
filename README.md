@@ -1,9 +1,9 @@
 # Setup Instruction (WIP)
 ## Steps Taken
 1. Copy this repo and download and install docker.
-2. Create instance of tensorflow 1.4.1 docker image as suited to your hardware listed [on Docker's hub](https://hub.docker.com/r/tensorflow/tensorflow/tags/?page=1&name=1.4.1) following the recommendations on [TensorFlow's website](https://www.tensorflow.org/install/docker). This command will turn your shell instance into a besh shell 'inside' the docker container, I'll refer to this shell as 'inside the docker' where as your regular CLI will be referred to as 'outside the docker'. I used the following and will use the name tf141 from here on, if you're not running with a suitable GPU exclude `--gpus all`;
+2. Create instance of tensorflow 1.4.1 docker image as suited to your hardware listed [on Docker's hub](https://hub.docker.com/r/tensorflow/tensorflow/tags/?page=1&name=1.4.1) following the recommendations on [TensorFlow's website](https://www.tensorflow.org/install/docker). For example, if you're not running with a suitable GPU exclude `--gpus all` and use . This command will turn your shell instance into a besh shell 'inside' the docker container, I'll refer to this shell as 'inside the docker' where as your regular CLI will be referred to as 'outside the docker'. I used the following and will use the name tf141 from here on;
 
-`docker run --name tf141 --gpus all -it tensorflow/tensorflow/tensorflow:1.4.1-devel-gpu-py3 bash`
+`docker run --name tf141 --gpus all -it tensorflow/tensorflow/tensorflow:1.4.1-devel-gpu bash`
 
 3. Inside the docker container, run;
 

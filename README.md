@@ -15,10 +15,10 @@
 	_I also recommend getting a text editor, I use vim;_
 	`apt-get install vim`
 
-4. Outside the docker container, run;
+4. Outside the docker container (i.e in a regular shell instance, not the one we started in step 2), run;
 `docker cp ./example/ tf141:/home/`
 
-5. Back inside the docker;
+5. Back inside the docker (step 2's shell);
 `mv ../home/example ~ && cd example`
 
 `pip install -r requirements.txt`

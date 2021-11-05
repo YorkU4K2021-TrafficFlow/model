@@ -17,8 +17,11 @@
 5. Back inside the docker;
 `mv ../home/example ~ && cd example`
 `pip install -r requirements.txt`
+
 `python -m scripts.generate_training_data --output_dir=data/PEMS-BAY --traffic_df_filename=data/pems-bay.h5`*
+
 `python -m scripts.gen_adj_mx  --sensor_ids_filename=data/sensor_graph/graph_sensor_ids.txt --normalized_k=0.1    --output_pkl_filename=data/sensor_graph/adj_mx.pkl`*
+
 `python run_demo.py --config_filename=data/model/pretrained/PEMS-BAY/config.yaml`*
 
 \* _currently this yields an error of a missing dataset due to training data generation scripts failing. Will investigate further.

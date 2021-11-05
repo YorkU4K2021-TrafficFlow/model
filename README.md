@@ -2,11 +2,15 @@
 ## Steps Taken
 1. Copy this repo and download and install docker.
 2. Create instance of tensorflow 1.4.1 docker image as suited to your hardware listed [here](https://hub.docker.com/r/tensorflow/tensorflow/tags/?page=1&name=1.3.0 "here"). I used the following and will use the name tf141 from here on;
+
 `docker run --name tf141 --gpus all -it tensorflow/tensorflow/tensorflow:1.4.1-devel-gpu-py3 bash`
 
 3. Inside the docker container, run;
+
 `apt-get update`
+
 `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py`
+
 `python get-pip.py`
 	_I also recommend getting a text editor, I use vim;_
 	`apt-get install vim`
@@ -16,6 +20,7 @@
 
 5. Back inside the docker;
 `mv ../home/example ~ && cd example`
+
 `pip install -r requirements.txt`
 
 `python -m scripts.generate_training_data --output_dir=data/PEMS-BAY --traffic_df_filename=data/pems-bay.h5`*

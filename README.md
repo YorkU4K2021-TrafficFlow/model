@@ -9,11 +9,15 @@
 
 `apt-get update`
 
+Make sure your pip and python are both 2.7 using `pip -V` and `python -v`, if pip isn't correct you can fix it with the following;
+
 `curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py`
 
 `python get-pip.py`
-	_I also recommend getting a text editor, I use vim;_
-	`apt-get install vim`
+
+I also recommend getting a text editor, I use vim;
+
+`apt-get install vim`
 
 4. Outside the docker container (i.e in a regular shell instance, not the one we started in step 2), run;
 `docker cp ./example/ tf141:/home/`

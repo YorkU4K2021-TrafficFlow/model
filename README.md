@@ -17,9 +17,11 @@
 5. Back inside the docker;
 `mv ../home/example ~ && cd example`
 `pip install -r requirements.txt`
-`python run_demo.py`*
+`python -m scripts.generate_training_data --output_dir=data/PEMS-BAY --traffic_df_filename=data/pems-bay.h5`*
+`python -m scripts.gen_adj_mx  --sensor_ids_filename=data/sensor_graph/graph_sensor_ids.txt --normalized_k=0.1    --output_pkl_filename=data/sensor_graph/adj_mx.pkl`*
+`python run_demo.py --config_filename=data/model/pretrained/PEMS-BAY/config.yaml`*
 
-\* _currently this yields an error of a missing dataset. Will investigate further
+\* _currently this yields an error of a missing dataset due to training data generation scripts failing. Will investigate further.
 
 ## Docker Image
 ~~If you just want to run with my setup, I've created a docker image [here](https://hub.docker.com/layers/175787563/tynt7/trafficflow-tf-1.3.0/latest/images/sha256-4433674720e966488fa85419e4c98cc761372a706862801b5140f638b12cb036?context=repo "here"). This image uses the GPU optimizers, as far as I understand will not be friendly if you don't have a dedicated GPU.~~

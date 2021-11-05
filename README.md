@@ -29,7 +29,7 @@
 
 `python run_demo.py --config_filename=data/model/pretrained/PEMS-BAY/config.yaml`*
 
-\* _currently this yields an error of a missing dataset due to training data generation scripts failing. Will investigate further.
+\* _currently this yields an error of a missing dataset due to training data generation scripts failing. Will investigate further._
 
 ## Docker Image
 ~~If you just want to run with my setup, I've created a docker image [here](https://hub.docker.com/layers/175787563/tynt7/trafficflow-tf-1.3.0/latest/images/sha256-4433674720e966488fa85419e4c98cc761372a706862801b5140f638b12cb036?context=repo "here"). This image uses the GPU optimizers, as far as I understand will not be friendly if you don't have a dedicated GPU.~~

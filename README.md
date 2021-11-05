@@ -33,4 +33,4 @@
 
 ## Docker Image
 ~~If you just want to run with my setup, I've created a docker image [here](https://hub.docker.com/layers/175787563/tynt7/trafficflow-tf-1.3.0/latest/images/sha256-4433674720e966488fa85419e4c98cc761372a706862801b5140f638b12cb036?context=repo "here"). This image uses the GPU optimizers, as far as I understand will not be friendly if you don't have a dedicated GPU.~~
-Don't use this docker image it won't ever work I used the wrong tensorflow.
+Don't use this docker image it won't ever work I used the wrong tensorflow. If you'd like to create your own image of the container with the changes/project in it I recommend [these steps](https://medium.com/@anuradhs/how-to-create-a-docker-image-from-running-docker-container-98ba15e5923d) if you're unfamiliar with docker.

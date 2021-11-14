@@ -1,7 +1,0 @@
-tensorflow==1.4.1
-scipy
-numpy
-pandas
-pyyaml
-statsmodels
-
